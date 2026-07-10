@@ -1,0 +1,172 @@
+
+/* marcados con IA los diseños q hice con gemini
+   IA: Estilos generales de la aplicación y tipografía */
+.principal
+{
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+/* IA */
+.principal
+{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* IA: Contenedor izquierdo con padding y fondo suave */
+.izquierda
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+/* IA */
+
+/* IA: Contenedor derecho con borde sutil en vez de línea dura */
+.derecha
+{
+    width: 50%;
+    padding: 40px;
+    align-items: center;
+    border-left: 1px solid #e9ecef;
+    background-color: #f1f3f5;
+}
+/* IA */
+
+.columnas
+{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.columna
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* IA: Separación y diseño de los labels de nombres */
+.Nombre
+{
+    margin-bottom: 20px;
+}
+.Nombre label, .columna > label {
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #495057;
+    margin-bottom: 8px;
+    display: block;
+}
+/* IA */
+
+/* IA: Inputs de texto estilizados con bordes suaves y focus activo */
+.Nombre input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.Nombre input:focus, .inputs:focus {
+    outline: none;
+    border-color: #4dabf7;
+    box-shadow: 0 0 0 3px rgba(77, 171, 247, 0.25);
+}
+/* IA */
+
+/* IA: Textareas con mejor espaciado interno y bordes redondeados corregidos */
+.inputs
+{
+    min-height: 450px;
+    width: 100%;
+    resize: none;
+    border-radius: 12px;
+    border: 1px solid #ced4da;
+    padding: 14px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 14px;
+}
+/* IA */
+
+.boton
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+/* IA: Botón moderno con efecto hover y active */
+.comparar
+{
+    padding: 12px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #228be6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(34, 139, 230, 0.15);
+    transition: background-color 0.2s, transform 0.1s;
+}
+.comparar:hover {
+    background-color: #1c7ed6;
+}
+.comparar:active {
+    transform: scale(0.98);
+}
+/* IA */
+
+.resultado
+{
+    display: flex;
+    flex-direction: column;
+    height:90%;
+}
+
+/* IA: Separación interna de los bloques de resultados */
+.figusPara1, .figusPara2
+{
+    height: 50%;
+    padding: 15px 0;
+}
+/* IA */
+
+/* IA: Tipografía corregida para los encabezados y textos de resultados */
+.derecha h1 {
+    font-size: 28px;
+    margin-top: 0;
+    color: #1a1d20;
+}
+.resultado h1 {
+    font-size: 18px;
+    color: #495057;
+    margin-bottom: 10px;
+}
+.resultado p {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid #228be6;
+    font-family: monospace;
+    font-size: 15px;
+    white-space: pre-line;
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    min-height: 40px;
+}
+/* IA */

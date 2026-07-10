@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>comparador figuritas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="https://scontent.fepa4-1.fna.fbcdn.net/v/t39.30808-6/468181391_990233106483111_3179930541627246427_n.jpg?stp=dst-jpg_tt6&cstp=mx1822x1822&ctp=s1822x1822&_nc_cat=102&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=SRhhte4Y6NUQ7kNvwGOz57e&_nc_oc=AdqNyqvPniWpcr3qvEqcHq3Rh-lQOyF-gQk1XR2ZhPldLjb6iaQOdlWVLof0hpNNQCOKZ56xy0CJ6XoV8TuMq3PZ&_nc_zt=23&_nc_ht=scontent.fepa4-1.fna&_nc_gid=zqHASF8mYGUYohLTRfR4Ng&_nc_ss=78289&oh=00_AQB319iDs4Vz3dpbKeZtIzYp93bJyfOIp4EWjWwY3-eLvA&oe=6A56244A">
+</head>
+<body>
+
+    <div class="principal">
+        <form class="izquierda">
+            <div class="columnas">
+                <div class="columna">
+                    <div class="Nombre">
+                        <label for="nombre1">Nombre 1</label>
+                        <input id="nombre1" type="text" required placeholder="Cualquier nombre">
+                    </div>
+                    <label for="input1">Mensaje 1</label>
+                    <textarea class="inputs" id="input1" placeholder="Texto que da la app al compartir" required></textarea>
+                </div>
+                <div class="columna">
+                    <div class="Nombre">
+                        <label for="nombre2">Nombre 2</label>
+                        <input id="nombre2" type="text" required placeholder="Cualquier nombre">
+                    </div>
+                    <label for="input2">Mensaje 2</label>
+                    <textarea class="inputs" id="input2" placeholder="Texto que da la app al compartir" required></textarea>
+                </div>
+            </div>
+
+            <div class="boton">
+                <button type="button" class="comparar" onClick="leerInputs()">Comparar</button>
+            </div>
+        </form>
+
+        <div class="derecha">
+            <h1>Resultado</h1>
+            <div class ="resultado">
+                <div class ="figusPara1">
+                    <h1 id = "muestra1"></h1>
+                    <p id = "texto1"></p>
+                </div>
+                <div class = figusPara2>
+                    <h1 id = "muestra2"></h1>
+                    <p id = "texto2"></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
